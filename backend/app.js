@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false }));
 
 const PORT = process.env.PORT || 5000;
-
+//routes
 app.use('/api/users', UserRoutes);
 app.use(errorMiddleware);
 
